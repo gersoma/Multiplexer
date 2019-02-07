@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Wed Jun 27 15:06:07 2018
+# Process ID: 2076
+# Current directory: C:/Users/ga0191/Desktop/Lab2/Lab2.runs/synth_1
+# Command line: vivado.exe -log mux8to1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mux8to1.tcl
+# Log file: C:/Users/ga0191/Desktop/Lab2/Lab2.runs/synth_1/mux8to1.vds
+# Journal file: C:/Users/ga0191/Desktop/Lab2/Lab2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mux8to1.tcl -notrace

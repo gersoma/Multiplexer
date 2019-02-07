@@ -1,0 +1,115 @@
+#-----------------------------------------------------------
+# Vivado v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Mon Jun 25 17:09:13 2018
+# Process ID: 12336
+# Current directory: C:/Users/ga0191/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12924
+# Log file: C:/Users/ga0191/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/ga0191/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project Lab2 C:/Users/ga0191/Desktop/Lab2 -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+file mkdir C:/Users/ga0191/Desktop/Lab2/Lab2.srcs/sources_1/new
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+close [ open C:/Users/ga0191/Desktop/Lab2/Lab2.srcs/sources_1/new/mux2to1.vhd w ]
+add_files C:/Users/ga0191/Desktop/Lab2/Lab2.srcs/sources_1/new/mux2to1.vhd
+close [ open C:/Users/ga0191/Desktop/Lab2/Lab2.srcs/sources_1/new/mux4to1.vhd w ]
+add_files C:/Users/ga0191/Desktop/Lab2/Lab2.srcs/sources_1/new/mux4to1.vhd
+close [ open C:/Users/ga0191/Desktop/Lab2/Lab2.srcs/sources_1/new/mux8to1.vhd w ]
+add_files C:/Users/ga0191/Desktop/Lab2/Lab2.srcs/sources_1/new/mux8to1.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ga0191/Desktop/Lab2/Lab2.srcs/sim_1/new/mux8to_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/ga0191/Desktop/Lab2/Lab2.srcs/sim_1/new/mux8to_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+source mux8to1_tb.tcl
+add_files -fileset constrs_1 -norecurse C:/Users/ga0191/Downloads/Nexys-4-DDR-Master.xdc
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ga0191/Desktop/Lab2/Lab2.runs/impl_1/mux8to1.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ga0191/Desktop/Lab2/Lab2.runs/impl_1/mux8to1.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ga0191/Desktop/Lab2/Lab2.runs/impl_1/mux8to1.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ga0191/Desktop/Lab2/Lab2.runs/impl_1/mux8to1.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+archive_project C:/Users/ga0191/Desktop/Lab2.xpr.zip -temp_dir C:/Users/ga0191/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-12336-PC3VGN482-CSE -force -include_local_ip_cache
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+close_sim
+launch_simulation
+launch_simulation
+source mux8to1_tb.tcl
+run 100 ms
+run 10 ms
+close_sim
+launch_simulation
+source mux8to1_tb.tcl
+close_sim
+launch_simulation
+source mux8to1_tb.tcl
+close_sim
+launch_simulation
+source mux8to1_tb.tcl
+run 10 ms
+close_sim
+launch_simulation
+source mux8to1_tb.tcl
+run 90 ms
+close_sim
+launch_simulation
+source mux8to1_tb.tcl
+run 9 ms
+run 90 ms
+import_files
+archive_project C:/Users/ga0191/Desktop/Lab2.xpr.zip -temp_dir C:/Users/ga0191/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-12336-PC3VGN482-CSE -force -include_local_ip_cache

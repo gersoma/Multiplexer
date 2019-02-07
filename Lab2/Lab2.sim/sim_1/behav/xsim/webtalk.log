@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3.1 (64-bit)
+# SW Build 2035080 on Fri Oct 20 14:20:01 MDT 2017
+# IP Build 2034413 on Fri Oct 20 15:56:25 MDT 2017
+# Start of session at: Wed Jun 27 15:13:24 2018
+# Process ID: 964
+# Current directory: C:/Users/ga0191/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/ga0191/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/mux8to1_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/ga0191/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/ga0191/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/ga0191/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/mux8to1_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/ga0191/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/mux8to1_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jun 27 15:13:46 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.3/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 53.297 ; gain = 1.398
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun 27 15:13:46 2018...
